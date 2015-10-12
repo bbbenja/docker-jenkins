@@ -2,7 +2,7 @@ FROM java:openjdk-8u66-jdk
 
 RUN apt-get update && apt-get install -y wget git curl zip && rm -rf /var/lib/apt/lists/*
 
-ENV JENKINS_VERSION 1.632
+ENV JENKINS_VERSION 1.633
 RUN mkdir /usr/share/jenkins/
 RUN useradd -d /home/jenkins -m -s /bin/bash jenkins
 
